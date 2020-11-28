@@ -39,17 +39,11 @@ public class Validacion extends AppCompatActivity {
         vEmail.setText(email);
         vDescripcion.setText(descripcion);
 
+
     }
 
     public void vclic(View view) {
-
-        Intent i=new Intent(this,MainActivity.class);
-        i.putExtra("fecha",fecha);
-        i.putExtra("nombre",nombre);
-        i.putExtra("telefono",telefono);
-        i.putExtra("email",email);
-        i.putExtra("descripcion",descripcion);
-        startActivity(i);
+        onBackPressed();
         finish();
     }
 }

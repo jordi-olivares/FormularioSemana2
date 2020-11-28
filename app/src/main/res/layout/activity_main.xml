@@ -28,6 +28,7 @@
         android:drawablePadding="@dimen/mIconPading"
         android:layout_margin="@dimen/mMargen"
         android:layout_gravity="center"
+        android:onClick="fClic"
         />
 
     <EditText

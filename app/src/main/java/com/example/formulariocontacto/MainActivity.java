@@ -2,14 +2,21 @@ package com.example.formulariocontacto;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
     EditText mFecha,mNombre,mTelefono,mEmail,mDescripcion;
-    String fecha,nombre,telefono,descripcion,email;
+    String fecha,nombre,telefono,descripcion,email,a;
+    int dia,mes,ano;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,20 +30,8 @@ public class MainActivity extends AppCompatActivity {
         mEmail=(EditText)findViewById(R.id.mEmail);
         mDescripcion=(EditText)findViewById(R.id.mDescripcion);
 
-        Bundle extras=getIntent().getExtras();
-        fecha=extras.getString("fecha");
-        nombre=extras.getString("nombre");
-        telefono=extras.getString("telefono");
-        descripcion=extras.getString("descripcion");
-        email=extras.getString("email");
 
-        mFecha.setText(fecha);
-        mNombre.setText(nombre);
-        mTelefono.setText(telefono);
-        mEmail.setText(email);
-        mDescripcion.setText(descripcion);
-
-
+        a="auxiliar";
     }
 
     public void clic(View v){
@@ -53,6 +48,21 @@ public class MainActivity extends AppCompatActivity {
         i.putExtra("email",email);
         i.putExtra("descripcion",descripcion);
         startActivity(i);
-        finish();
+        //finish();
+    }
+
+
+    public void fClic(View view) {
+        final Calendar c=Calendar.getInstance();
+        dia=c.get(Calendar.DAY_OF_MONTH);
+        mes=c.get(Calendar.MONTH);
+        ano=c.get(Calendar.YEAR);
+        DatePickerDialog picker=new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                mFecha.setText(dayOfMonth+"/"+(month+1)+"/"+year);
+            }
+        },dia,mes,ano);
+        picker.show();
     }
 }
