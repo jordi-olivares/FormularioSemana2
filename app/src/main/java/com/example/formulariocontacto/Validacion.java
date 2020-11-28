@@ -42,7 +42,13 @@ public class Validacion extends AppCompatActivity {
     }
 
     public void vclic(View view) {
-        Intent i =new Intent(this,MainActivity.class);
+
+        Intent i=new Intent(this,MainActivity.class);
+        i.putExtra("fecha",fecha);
+        i.putExtra("nombre",nombre);
+        i.putExtra("telefono",telefono);
+        i.putExtra("email",email);
+        i.putExtra("descripcion",descripcion);
         startActivity(i);
         finish();
     }

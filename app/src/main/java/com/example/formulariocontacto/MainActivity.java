@@ -23,6 +23,20 @@ public class MainActivity extends AppCompatActivity {
         mEmail=(EditText)findViewById(R.id.mEmail);
         mDescripcion=(EditText)findViewById(R.id.mDescripcion);
 
+        Bundle extras=getIntent().getExtras();
+        fecha=extras.getString("fecha");
+        nombre=extras.getString("nombre");
+        telefono=extras.getString("telefono");
+        descripcion=extras.getString("descripcion");
+        email=extras.getString("email");
+
+        mFecha.setText(fecha);
+        mNombre.setText(nombre);
+        mTelefono.setText(telefono);
+        mEmail.setText(email);
+        mDescripcion.setText(descripcion);
+
+
     }
 
     public void clic(View v){
