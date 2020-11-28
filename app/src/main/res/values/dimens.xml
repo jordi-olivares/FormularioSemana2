@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mMargen">20dp</dimen>
+    <dimen name="mEspacio">40dp</dimen>
+    <dimen name="mIconPading">12dp</dimen>
+    <dimen name="principales">18sp</dimen>
+    <dimen name="vEspacio">80dp</dimen>
+</resources>

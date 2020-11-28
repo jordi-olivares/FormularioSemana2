@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FormularioContacto</string>
+    <string name="mHintFecha">dd/mm/aaaa</string>
+    <string name="mHintNombre">Nombre completo</string>
+    <string name="mHintTelefono">Télefono</string>
+    <string name="mHintEmail">email</string>
+    <string name="mHintDescripcion">Descripción de contacto</string>
+    <string name="mBtmText">Siguente</string>
+    <string name="vBtmText">Editar</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/mNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mHintNombre"
+        android:layout_margin="@dimen/mMargen"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:textSize="@dimen/principales"
+        />
+
+    <EditText
+        android:id="@+id/mFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mHintFecha"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:drawablePadding="@dimen/mIconPading"
+        android:layout_margin="@dimen/mMargen"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/mTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mHintTelefono"
+        android:layout_margin="@dimen/mMargen"
+        android:layout_gravity="center"
+        android:fontFamily="casual"
+        android:drawableLeft="@drawable/ic_baseline_phone"
+        android:drawablePadding="@dimen/mIconPading"
+        android:inputType="phone"
+        />
+    <EditText
+        android:id="@+id/mEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mHintEmail"
+        android:layout_margin="@dimen/mMargen"
+        android:layout_gravity="center"
+        android:fontFamily="casual"
+        android:drawableLeft="@drawable/ic_mail"
+        android:drawablePadding="@dimen/mIconPading"
+        android:inputType="textEmailAddress"
+        />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <EditText
+        android:id="@+id/mDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mHintDescripcion"
+        android:layout_margin="@dimen/mMargen"
+        android:layout_gravity="center"
+        android:fontFamily="casual"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mEspacio"
+        />
+
+    <Button
+        android:id="@+id/mBtm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:text="@string/mBtmText"
+        android:fontFamily="casual"
+        android:textSize="@dimen/principales"
+        android:onClick="clic"
+        />
+
+
+
+</LinearLayout>

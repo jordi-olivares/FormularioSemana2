@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Validacion"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/vNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mMargen"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:textSize="@dimen/principales"
+        />
+
+    <TextView
+        android:id="@+id/vFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:drawablePadding="@dimen/mIconPading"
+        android:layout_margin="@dimen/mMargen"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/vTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mMargen"
+        android:layout_gravity="center"
+        android:fontFamily="casual"
+        android:drawableLeft="@drawable/ic_baseline_phone"
+        android:drawablePadding="@dimen/mIconPading"
+        />
+    <TextView
+        android:id="@+id/vEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mMargen"
+        android:layout_gravity="center"
+        android:fontFamily="casual"
+        android:drawableLeft="@drawable/ic_mail"
+        android:drawablePadding="@dimen/mIconPading"
+        android:inputType="textEmailAddress"
+        />
+
+
+    <TextView
+        android:id="@+id/vDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mMargen"
+        android:layout_gravity="center"
+        android:fontFamily="casual"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vEspacio"
+        />
+
+    <Button
+        android:id="@+id/vBtm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/vBtmText"
+        android:textAllCaps="false"
+        android:fontFamily="casual"
+        android:textSize="@dimen/principales"
+        android:onClick="vclic"
+        />
+
+
+</LinearLayout>
